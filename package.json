@@ -1,0 +1,40 @@
+{
+  "name": "@mrbb/first-npm",
+  "version": "2.0.0",
+  "description": "⚠️ 请移步到重构后的 [params-mapper](https://github.com/Monsoir/params-mapper2)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "dev": "rm -fr ./dist && tsc -p tsconfig.dev.json",
+    "build": "rm -fr ./dist && tsc -p tsconfig.prod.json",
+    "example": "npm run dev && node ./example/index.js",
+    "test": "ts-mocha -p ./tsconfig.test.json ./test/*"
+  },
+  "keywords": [],
+  "author": "monsoir <monwingyeung@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monsoir/params-mapper.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-mocha": "^2.0.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Monsoir/params-mapper/issues"
+  },
+  "homepage": "https://github.com/Monsoir/params-mapper#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  }
+}
